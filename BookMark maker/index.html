@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <script src="script.js"></script>
+    <div class="pt-3 bg1">
+      <p class="p1">Hello</p>
+      <p class="p2 pb-2">Jane Doe</p>
+
+      <form id="bookmarkForm" class="card1 mb-2">
+        <h1 class="head mb-4">Bookmark Your Favourite Sites</h1>
+        <div class="inside-card mb-3">
+          <div class="mb-4">
+            <label class="label" for="siteNameInput">SITE NAME</label>
+            <input
+              id="siteNameInput"
+              class="input"
+              placeholder="Enter site name"
+              type="text"
+            />
+            <p id="siteNameErrMsg"></p>
+          </div>
+          <div class="mb-5">
+            <label class="label" for="siteUrlInput">SITE NAME</label>
+            <input
+              id="siteUrlInput"
+              class="input"
+              placeholder="Enter site name"
+              type="text"
+            />
+            <p id="siteUrlErrMsg"></p>
+          </div>
+          <div class="text-right mb-2">
+            <button id="submitBtn" type="submit" class="submit">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="pr-2 d-flex flex-column" id="resultContainer">
+      <ul id="bookmarksList"></ul>
+    </div>
+  </body>
+</html>
